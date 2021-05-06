@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="9.6.2">
+<eagle version="9.5.2">
 <drawing>
 <settings>
 <setting alwaysvectorfont="yes"/>
@@ -12,14 +12,18 @@
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="no" active="yes"/>
 <layer number="3" name="Route3" color="4" fill="3" visible="no" active="no"/>
-<layer number="8" name="Route8" color="1" fill="2" visible="yes" active="yes"/>
-<layer number="9" name="Route9" color="4" fill="2" visible="yes" active="yes"/>
-<layer number="10" name="Route10" color="1" fill="7" visible="yes" active="yes"/>
-<layer number="11" name="Route11" color="4" fill="7" visible="yes" active="yes"/>
-<layer number="12" name="Route12" color="1" fill="5" visible="yes" active="yes"/>
-<layer number="13" name="Route13" color="4" fill="5" visible="yes" active="yes"/>
+<layer number="4" name="Route4" color="1" fill="4" visible="no" active="no"/>
+<layer number="5" name="Route5" color="4" fill="4" visible="no" active="no"/>
+<layer number="6" name="Route6" color="1" fill="8" visible="no" active="no"/>
+<layer number="7" name="Route7" color="4" fill="8" visible="no" active="no"/>
+<layer number="8" name="Route8" color="1" fill="2" visible="no" active="yes"/>
+<layer number="9" name="Route9" color="4" fill="2" visible="no" active="yes"/>
+<layer number="10" name="Route10" color="1" fill="7" visible="no" active="yes"/>
+<layer number="11" name="Route11" color="4" fill="7" visible="no" active="yes"/>
+<layer number="12" name="Route12" color="1" fill="5" visible="no" active="yes"/>
+<layer number="13" name="Route13" color="4" fill="5" visible="no" active="yes"/>
 <layer number="14" name="Route14" color="1" fill="6" visible="no" active="no"/>
-<layer number="15" name="Route15" color="4" fill="6" visible="yes" active="yes"/>
+<layer number="15" name="Route15" color="4" fill="6" visible="no" active="yes"/>
 <layer number="16" name="Bottom" color="1" fill="1" visible="yes" active="yes"/>
 <layer number="17" name="Pads" color="2" fill="1" visible="yes" active="yes"/>
 <layer number="18" name="Vias" color="2" fill="1" visible="yes" active="yes"/>
@@ -9216,9 +9220,10 @@ These design rules are smaller than the &lt;a href=&quot;https://jlcpcb.com/capa
 <attribute name="PROD_ID" value="RES-14342" x="1.6" y="6.8" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="VALUE" value="1k" x="2.235" y="8.705" size="1.27" layer="27" rot="R180"/>
 </element>
-<element name="R10" library="SparkFun-Resistors" package="0402-TIGHT" value="22OHM-0402T-1/16W-1%" x="20.2" y="15.4" smashed="yes" rot="R180">
+<element name="R10" library="SparkFun-Resistors" package="0402-TIGHT" value="22" x="20.2" y="15.4" smashed="yes" rot="R180">
 <attribute name="NAME" x="17.8" y="15" size="0.6096" layer="25"/>
-<attribute name="PROD_ID" value="RES-14340" x="20.2" y="15.4" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="PROD_ID" value="RES-12427" x="20.2" y="15.4" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="VALUE" value="22Ω" x="20.2" y="15.4" size="1.778" layer="27" rot="R180" display="off"/>
 </element>
 <element name="C8" library="SparkFun-Capacitors" package="0402-TIGHT" value="0.5pF" x="20.2" y="14.4" smashed="yes">
 <attribute name="NAME" x="18.3" y="14.1" size="0.6096" layer="25"/>
@@ -9272,10 +9277,10 @@ These design rules are smaller than the &lt;a href=&quot;https://jlcpcb.com/capa
 <attribute name="PROD_ID" value="RES-14342" x="17.9" y="12.45" size="1.778" layer="27" rot="R270" display="off"/>
 <attribute name="VALUE" value="1k" x="15.995" y="13.085" size="1.27" layer="27" rot="R270"/>
 </element>
-<element name="RX" library="SparkFun-LED" package="LED-0603" value="BLUE" x="6.8" y="20.8" smashed="yes" rot="R180">
+<element name="RX" library="SparkFun-LED" package="LED-0603" value="Yellow" x="6.8" y="20.8" smashed="yes" rot="R180">
 <attribute name="NAME" x="7.3" y="20.3" size="0.6096" layer="25" rot="R180"/>
-<attribute name="PROD_ID" value="DIO-08575" x="6.8" y="20.8" size="1.778" layer="27" rot="R180" display="off"/>
-<attribute name="VALUE" value="BLUE" x="7.8" y="22.8" size="1.27" layer="27" rot="R180"/>
+<attribute name="PROD_ID" value="DIO-09003" x="6.8" y="20.8" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="VALUE" value="Yellow" x="7.8" y="22.8" size="1.27" layer="27" rot="R180"/>
 </element>
 <element name="FID1" library="SparkFun-Aesthetics" package="FIDUCIAL-1X2" value="FIDUCIAL1X2" x="21" y="5" smashed="yes"/>
 <element name="FID2" library="SparkFun-Aesthetics" package="FIDUCIAL-1X2" value="FIDUCIAL1X2" x="4.5" y="18.6" smashed="yes"/>
