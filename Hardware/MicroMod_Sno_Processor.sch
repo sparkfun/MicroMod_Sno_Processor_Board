@@ -6437,6 +6437,7 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <text x="421.64" y="7.62" size="2.54" layer="94" font="vector">V10</text>
 <wire x1="330.2" y1="187.96" x2="330.2" y2="279.4" width="0.2032" layer="97" style="longdash"/>
 <text x="353.568" y="11.43" size="2.54" layer="94" font="vector">Alorium Technology</text>
+<text x="96.52" y="76.2" size="2.54" layer="97" font="vector">VCC: 2.85 - 3.465V</text>
 </plain>
 <instances>
 <instance part="U1" gate="G$3" x="68.58" y="132.08" smashed="yes">
