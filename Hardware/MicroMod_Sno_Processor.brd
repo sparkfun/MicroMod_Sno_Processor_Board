@@ -12,10 +12,10 @@
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="no" active="yes"/>
 <layer number="3" name="Route3" color="4" fill="3" visible="no" active="no"/>
-<layer number="4" name="Route4" color="1" fill="4" visible="no" active="no"/>
-<layer number="5" name="Route5" color="4" fill="4" visible="no" active="no"/>
-<layer number="6" name="Route6" color="1" fill="8" visible="no" active="no"/>
-<layer number="7" name="Route7" color="4" fill="8" visible="no" active="no"/>
+<layer number="4" name="Route4" color="18" fill="1" visible="no" active="no"/>
+<layer number="5" name="Route5" color="19" fill="1" visible="no" active="no"/>
+<layer number="6" name="Route6" color="25" fill="1" visible="no" active="no"/>
+<layer number="7" name="Route7" color="26" fill="1" visible="no" active="no"/>
 <layer number="8" name="Route8" color="1" fill="2" visible="no" active="yes"/>
 <layer number="9" name="Route9" color="4" fill="2" visible="no" active="yes"/>
 <layer number="10" name="Route10" color="1" fill="7" visible="no" active="yes"/>
@@ -35,7 +35,7 @@
 <layer number="24" name="bOrigins" color="15" fill="1" visible="yes" active="yes"/>
 <layer number="25" name="tNames" color="7" fill="1" visible="no" active="yes"/>
 <layer number="26" name="bNames" color="7" fill="1" visible="no" active="yes"/>
-<layer number="27" name="tValues" color="7" fill="1" visible="no" active="yes"/>
+<layer number="27" name="tValues" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="28" name="bValues" color="7" fill="1" visible="no" active="yes"/>
 <layer number="29" name="tStop" color="7" fill="3" visible="no" active="yes"/>
 <layer number="30" name="bStop" color="7" fill="6" visible="no" active="yes"/>
@@ -8239,21 +8239,56 @@ Source: &lt;a href="http://www.ftdichip.com/Support/Documents/DataSheets/ICs/DS_
 <rectangle x1="-0.05" y1="1.525" x2="0.7" y2="1.925" layer="29" rot="R270"/>
 <rectangle x1="0.6" y1="1.525" x2="1.35" y2="1.925" layer="29" rot="R270"/>
 </package>
-<package name="SMD25X20">
-<smd name="P$3" x="1.325" y="0.325" dx="0.65" dy="0.65" layer="1"/>
-<smd name="P$1" x="-0.325" y="-1.025" dx="0.65" dy="0.65" layer="1"/>
-<smd name="P$2" x="1.325" y="-1.025" dx="0.65" dy="0.65" layer="1"/>
-<smd name="P$4" x="-0.325" y="0.325" dx="0.65" dy="0.65" layer="1"/>
-<wire x1="-0.802" y1="0.802" x2="1.802" y2="0.802" width="0.05" layer="21"/>
-<wire x1="1.802" y1="0.802" x2="1.802" y2="-1.502" width="0.05" layer="21"/>
-<wire x1="1.802" y1="-1.502" x2="-0.604" y2="-1.502" width="0.05" layer="21"/>
-<wire x1="-0.604" y1="-1.502" x2="-0.802" y2="-1.502" width="0.05" layer="21"/>
-<wire x1="-0.802" y1="-1.502" x2="-0.802" y2="-1.304" width="0.05" layer="21"/>
-<wire x1="-0.802" y1="-1.304" x2="-0.802" y2="0.802" width="0.05" layer="21"/>
-<wire x1="-0.604" y1="-1.502" x2="-0.802" y2="-1.304" width="0.05" layer="21"/>
-<text x="-0.65" y="0.825" size="0.254" layer="25">&gt;name</text>
-<text x="-0.675" y="-1.75" size="0.254" layer="27">&gt;value</text>
-<circle x="-1.016" y="-1.778" radius="0.127" width="0.127" layer="21"/>
+<package name="SMD20X16">
+<circle x="-1.3284" y="-1.1718" radius="0.127" width="0.127" layer="21"/>
+<wire x1="-1" y1="-0.7" x2="-1" y2="0.73" width="0.05" layer="51"/>
+<wire x1="-1" y1="0.73" x2="-0.93" y2="0.8" width="0.05" layer="51"/>
+<wire x1="-0.93" y1="0.8" x2="0.89" y2="0.8" width="0.05" layer="51"/>
+<wire x1="0.89" y1="0.8" x2="1" y2="0.69" width="0.05" layer="51"/>
+<wire x1="1" y1="0.69" x2="1" y2="-0.7" width="0.05" layer="51"/>
+<wire x1="1" y1="-0.7" x2="0.9" y2="-0.8" width="0.05" layer="51"/>
+<wire x1="0.9" y1="-0.8" x2="-0.9" y2="-0.8" width="0.05" layer="51"/>
+<wire x1="-0.9" y1="-0.8" x2="-1" y2="-0.7" width="0.05" layer="51"/>
+<polygon width="0.05" layer="51">
+<vertex x="1" y="-0.3"/>
+<vertex x="1" y="-0.7"/>
+<vertex x="0.9" y="-0.8"/>
+<vertex x="0.7" y="-0.8"/>
+<vertex x="0.7" y="-0.57" curve="90"/>
+<vertex x="0.84" y="-0.43"/>
+<vertex x="0.84" y="-0.3"/>
+</polygon>
+<polygon width="0.05" layer="51">
+<vertex x="-1" y="0.3"/>
+<vertex x="-1" y="0.72"/>
+<vertex x="-0.92" y="0.8"/>
+<vertex x="-0.7" y="0.8"/>
+<vertex x="-0.7" y="0.57" curve="90"/>
+<vertex x="-0.84" y="0.43"/>
+<vertex x="-0.84" y="0.3"/>
+</polygon>
+<polygon width="0.05" layer="51">
+<vertex x="1" y="0.3"/>
+<vertex x="1" y="0.72"/>
+<vertex x="0.92" y="0.8"/>
+<vertex x="0.7" y="0.8"/>
+<vertex x="0.7" y="0.57" curve="-90"/>
+<vertex x="0.84" y="0.43"/>
+<vertex x="0.84" y="0.3"/>
+</polygon>
+<polygon width="0.05" layer="51">
+<vertex x="-1" y="-0.3"/>
+<vertex x="-1" y="-0.7"/>
+<vertex x="-0.9" y="-0.8"/>
+<vertex x="-0.7" y="-0.8"/>
+<vertex x="-0.7" y="-0.57" curve="-90"/>
+<vertex x="-0.84" y="-0.43"/>
+<vertex x="-0.84" y="-0.3"/>
+</polygon>
+<smd name="2" x="0.85" y="-0.55" dx="0.7" dy="0.5" layer="1" rot="R90"/>
+<smd name="1" x="-0.85" y="-0.55" dx="0.7" dy="0.5" layer="1" rot="R90"/>
+<smd name="4" x="-0.85" y="0.55" dx="0.7" dy="0.5" layer="1" rot="R90"/>
+<smd name="3" x="0.85" y="0.55" dx="0.7" dy="0.5" layer="1" rot="R90"/>
 </package>
 <package name="UBGA_169">
 <smd name="A13" x="0" y="0" dx="0.34" dy="0.34" layer="1" roundness="100"/>
@@ -9251,11 +9286,10 @@ These design rules are smaller than the &lt;a href=&quot;https://jlcpcb.com/capa
 <attribute name="VALUE" value="0.1uF" x="6.165" y="17.695" size="1.27" layer="27"/>
 </element>
 <element name="J1" library="SparkFun-MicroMod" package="M.2-CARD-E-22" value="MICROMOD-2222" x="11" y="0" smashed="yes"/>
-<element name="U2" library="New_Parts" package="SMD25X20" value="16MHz" x="20.6" y="17.8" smashed="yes" rot="R270">
-<attribute name="DIGIKEY_PART" value="535-11726-2-ND" x="20.6" y="17.8" size="1.778" layer="27" rot="R270" display="off"/>
-<attribute name="NAME" x="19.75" y="17.025" size="0.6096" layer="25"/>
-<attribute name="PROD_ID" value="XTAL-15929" x="20.6" y="17.8" size="1.778" layer="27" rot="R270" display="off"/>
-<attribute name="VALUE" value="16MHz" x="18.85" y="18.475" size="0.254" layer="27" rot="R270"/>
+<element name="U2" library="New_Parts" package="SMD20X16" value="16MHz" x="20.2" y="17.292" smashed="yes" rot="R270">
+<attribute name="NAME" x="19.35" y="16.517" size="0.6096" layer="25"/>
+<attribute name="PROD_ID" value="XTAL-16018" x="20.2" y="17.292" size="1.778" layer="27" rot="R270" display="off"/>
+<attribute name="VALUE" value="16MHz" x="18.45" y="17.967" size="0.254" layer="27" rot="R270"/>
 </element>
 <element name="IC1" library="New_Parts" package="QFN16" package3d_urn="urn:adsk.eagle:package:14017/1" value="FT230XQ" x="19.323" y="8.566" smashed="yes">
 <attribute name="DIGIKEY_PART" value="768-1130-2-ND" x="19.323" y="8.566" size="1.778" layer="27" display="off"/>
@@ -9334,7 +9368,7 @@ These design rules are smaller than the &lt;a href=&quot;https://jlcpcb.com/capa
 <contactref element="C10" pad="2"/>
 <contactref element="C11" pad="2"/>
 <contactref element="C12" pad="2"/>
-<contactref element="U2" pad="P$2"/>
+<contactref element="U2" pad="2"/>
 <contactref element="J1" pad="33"/>
 <contactref element="J1" pad="GND2"/>
 <contactref element="J1" pad="GND1"/>
@@ -9421,9 +9455,7 @@ These design rules are smaller than the &lt;a href=&quot;https://jlcpcb.com/capa
 <via x="4.8" y="6.3" extent="1-16" drill="0.2"/>
 <contactref element="IC1" pad="3"/>
 <contactref element="IC1" pad="13"/>
-<wire x1="19.575" y1="16.475" x2="20.05" y2="16.95" width="0.254" layer="1"/>
-<wire x1="20.05" y1="16.95" x2="20.05" y2="17.15" width="0.254" layer="1"/>
-<via x="20.05" y="17.15" extent="1-16" drill="0.2"/>
+<via x="19.669" y="17.15" extent="1-16" drill="0.2"/>
 <wire x1="20.824" y1="19.4646" x2="20.7994" y2="19.44" width="0.254" layer="1"/>
 <wire x1="20.7994" y1="19.44" x2="19.993" y2="19.44" width="0.254" layer="1"/>
 <via x="19.993" y="19.44" extent="1-16" drill="0.2"/>
@@ -9455,6 +9487,8 @@ These design rules are smaller than the &lt;a href=&quot;https://jlcpcb.com/capa
 <wire x1="5.923" y1="20.8" x2="4.5698" y2="20.8" width="0.3048" layer="1"/>
 <wire x1="4.5698" y1="20.8" x2="4.554" y2="20.7842" width="0.3048" layer="1"/>
 <via x="4.554" y="20.7842" extent="1-16" drill="0.2"/>
+<wire x1="19.65" y1="16.442" x2="19.65" y2="17.131" width="0.254" layer="1"/>
+<wire x1="19.65" y1="17.131" x2="19.669" y2="17.15" width="0.254" layer="1"/>
 </signal>
 <signal name="3.3V">
 <contactref element="C3" pad="1"/>
@@ -9499,7 +9533,7 @@ These design rules are smaller than the &lt;a href=&quot;https://jlcpcb.com/capa
 <contactref element="C10" pad="1"/>
 <contactref element="C11" pad="1"/>
 <contactref element="C12" pad="1"/>
-<contactref element="U2" pad="P$4"/>
+<contactref element="U2" pad="4"/>
 <contactref element="J1" pad="2"/>
 <contactref element="J1" pad="74"/>
 <wire x1="10.8" y1="16.2" x2="10.4" y2="15.8" width="0.3048" layer="1"/>
@@ -9549,9 +9583,7 @@ These design rules are smaller than the &lt;a href=&quot;https://jlcpcb.com/capa
 <contactref element="IC1" pad="10"/>
 <contactref element="IC1" pad="1"/>
 <contactref element="IC1" pad="8"/>
-<wire x1="20.925" y1="18.125" x2="20.587" y2="18.125" width="0.254" layer="1"/>
-<wire x1="20.587" y1="18.125" x2="20.174" y2="17.712" width="0.254" layer="1"/>
-<via x="20.174" y="17.712" extent="1-16" drill="0.2"/>
+<via x="20.682" y="17.458" extent="1-16" drill="0.2"/>
 <wire x1="17.598" y1="9.541" x2="17.598" y2="10.116" width="0.254" layer="1"/>
 <wire x1="17.598" y1="10.116" x2="17.772" y2="10.29" width="0.254" layer="1"/>
 <via x="17.772" y="10.29" extent="1-16" drill="0.2"/>
@@ -9602,6 +9634,8 @@ These design rules are smaller than the &lt;a href=&quot;https://jlcpcb.com/capa
 <via x="12" y="15.8" extent="1-16" drill="0.2"/>
 <wire x1="12" y1="15.8" x2="12.4" y2="16.2" width="0.3048" layer="1"/>
 <wire x1="12" y1="15.8" x2="11.6" y2="16.2" width="0.3048" layer="1"/>
+<wire x1="20.75" y1="18.142" x2="20.75" y2="17.526" width="0.254" layer="1"/>
+<wire x1="20.75" y1="17.526" x2="20.682" y2="17.458" width="0.254" layer="1"/>
 </signal>
 <signal name="RESET_N">
 <contactref element="U1" pad="B9"/>
@@ -9868,9 +9902,9 @@ These design rules are smaller than the &lt;a href=&quot;https://jlcpcb.com/capa
 </signal>
 <signal name="OSC">
 <contactref element="R10" pad="1"/>
-<contactref element="U2" pad="P$3"/>
-<wire x1="20.925" y1="16.475" x2="20.925" y2="15.625" width="0.1016" layer="1"/>
-<wire x1="20.925" y1="15.625" x2="20.7" y2="15.4" width="0.1016" layer="1"/>
+<contactref element="U2" pad="3"/>
+<wire x1="20.75" y1="16.442" x2="20.75" y2="15.45" width="0.127" layer="1"/>
+<wire x1="20.75" y1="15.45" x2="20.7" y2="15.4" width="0.127" layer="1"/>
 </signal>
 <signal name="EXT_RESET">
 <contactref element="J1" pad="6"/>

@@ -1466,6 +1466,57 @@ Source: &lt;a href="http://www.ftdichip.com/Support/Documents/DataSheets/ICs/DS_
 <wire x1="-10.4" y1="-10.4" x2="0.8" y2="-10.4" width="0.127" layer="21"/>
 <circle x="-10.668" y="1.016" radius="0.2032" width="0.127" layer="21"/>
 </package>
+<package name="SMD20X16">
+<circle x="-1.3284" y="-1.1718" radius="0.127" width="0.127" layer="21"/>
+<wire x1="-1" y1="-0.7" x2="-1" y2="0.73" width="0.05" layer="51"/>
+<wire x1="-1" y1="0.73" x2="-0.93" y2="0.8" width="0.05" layer="51"/>
+<wire x1="-0.93" y1="0.8" x2="0.89" y2="0.8" width="0.05" layer="51"/>
+<wire x1="0.89" y1="0.8" x2="1" y2="0.69" width="0.05" layer="51"/>
+<wire x1="1" y1="0.69" x2="1" y2="-0.7" width="0.05" layer="51"/>
+<wire x1="1" y1="-0.7" x2="0.9" y2="-0.8" width="0.05" layer="51"/>
+<wire x1="0.9" y1="-0.8" x2="-0.9" y2="-0.8" width="0.05" layer="51"/>
+<wire x1="-0.9" y1="-0.8" x2="-1" y2="-0.7" width="0.05" layer="51"/>
+<polygon width="0.05" layer="51">
+<vertex x="1" y="-0.3"/>
+<vertex x="1" y="-0.7"/>
+<vertex x="0.9" y="-0.8"/>
+<vertex x="0.7" y="-0.8"/>
+<vertex x="0.7" y="-0.57" curve="90"/>
+<vertex x="0.84" y="-0.43"/>
+<vertex x="0.84" y="-0.3"/>
+</polygon>
+<polygon width="0.05" layer="51">
+<vertex x="-1" y="0.3"/>
+<vertex x="-1" y="0.72"/>
+<vertex x="-0.92" y="0.8"/>
+<vertex x="-0.7" y="0.8"/>
+<vertex x="-0.7" y="0.57" curve="90"/>
+<vertex x="-0.84" y="0.43"/>
+<vertex x="-0.84" y="0.3"/>
+</polygon>
+<polygon width="0.05" layer="51">
+<vertex x="1" y="0.3"/>
+<vertex x="1" y="0.72"/>
+<vertex x="0.92" y="0.8"/>
+<vertex x="0.7" y="0.8"/>
+<vertex x="0.7" y="0.57" curve="-90"/>
+<vertex x="0.84" y="0.43"/>
+<vertex x="0.84" y="0.3"/>
+</polygon>
+<polygon width="0.05" layer="51">
+<vertex x="-1" y="-0.3"/>
+<vertex x="-1" y="-0.7"/>
+<vertex x="-0.9" y="-0.8"/>
+<vertex x="-0.7" y="-0.8"/>
+<vertex x="-0.7" y="-0.57" curve="-90"/>
+<vertex x="-0.84" y="-0.43"/>
+<vertex x="-0.84" y="-0.3"/>
+</polygon>
+<smd name="2" x="0.85" y="-0.55" dx="0.7" dy="0.5" layer="1" rot="R90"/>
+<smd name="1" x="-0.85" y="-0.55" dx="0.7" dy="0.5" layer="1" rot="R90"/>
+<smd name="4" x="-0.85" y="0.55" dx="0.7" dy="0.5" layer="1" rot="R90"/>
+<smd name="3" x="0.85" y="0.55" dx="0.7" dy="0.5" layer="1" rot="R90"/>
+</package>
 </packages>
 <packages3d>
 <package3d name="QFN16" urn="urn:adsk.eagle:package:14017/1" type="box">
@@ -1831,6 +1882,20 @@ Source: &lt;a href="http://www.ftdichip.com/Support/Documents/DataSheets/ICs/DS_
 <technology name="">
 <attribute name="DIGIKEY_PART" value="535-11726-2-ND"/>
 <attribute name="PROD_ID" value="XTAL-15929"/>
+<attribute name="VALUE" value="16MHz"/>
+</technology>
+</technologies>
+</device>
+<device name="SMD20X16" package="SMD20X16">
+<connects>
+<connect gate="G$1" pin="GND" pad="2"/>
+<connect gate="G$1" pin="OUT" pad="3"/>
+<connect gate="G$1" pin="STBY" pad="1"/>
+<connect gate="G$1" pin="VDD" pad="4"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="PROD_ID" value="XTAL-16018"/>
 <attribute name="VALUE" value="16MHz"/>
 </technology>
 </technologies>
@@ -6324,7 +6389,7 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <part name="C11" library="SparkFun-Capacitors" deviceset="0.1UF" device="-0402T-6.3V-10%-X7R" value="0.1uF"/>
 <part name="C12" library="SparkFun-Capacitors" deviceset="0.1UF" device="-0402T-6.3V-10%-X7R" value="0.1uF"/>
 <part name="J1" library="SparkFun-MicroMod" deviceset="MICROMOD" device="-2222"/>
-<part name="U2" library="New_Parts" deviceset="OSC_TINY_16" device="" value="16MHz"/>
+<part name="U2" library="New_Parts" deviceset="OSC_TINY_16" device="SMD20X16" value="16MHz"/>
 <part name="IC1" library="New_Parts" deviceset="FT230X" device="Q" package3d_urn="urn:adsk.eagle:package:14017/1" value="FT230XQ"/>
 <part name="GND2" library="SparkFun-PowerSymbols" deviceset="GND" device=""/>
 <part name="GND3" library="SparkFun-PowerSymbols" deviceset="GND" device=""/>
@@ -6372,7 +6437,6 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <text x="421.64" y="7.62" size="2.54" layer="94" font="vector">V10</text>
 <wire x1="330.2" y1="187.96" x2="330.2" y2="279.4" width="0.2032" layer="97" style="longdash"/>
 <text x="353.568" y="11.43" size="2.54" layer="94" font="vector">Alorium Technology</text>
-<text x="96.52" y="76.2" size="2.54" layer="97">VCC: 2.85 - 3.465V</text>
 </plain>
 <instances>
 <instance part="U1" gate="G$3" x="68.58" y="132.08" smashed="yes">
